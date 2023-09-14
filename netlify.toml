@@ -1,0 +1,18 @@
+[build]
+  command = "npm run build"
+  publish = "main" # Change 'dist' to the folder where your built files are located
+
+[build.environment]
+  NODE_VERSION = "14" # Specify the Node.js version you want to use
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs" # If you're using Next.js, replace with appropriate plugin
+
+[build.environment]
+  NPM_VERSION = "7" # Specify the npm version you want to use
+
+[[plugins]]
+  package = "@netlify/plugin-functions-core"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
